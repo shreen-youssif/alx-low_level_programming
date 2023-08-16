@@ -1,4 +1,4 @@
-#include "main.h"
+#include<stdio.h>
 
 /**
  * main - Entry point
@@ -16,7 +16,7 @@ int main(void)
 
 	while (count < 50)
 	{
-		printf("%d, ", a);
+		printf("%lu, ", a);
 		a = b;
 		b = sum;
 		count++;
