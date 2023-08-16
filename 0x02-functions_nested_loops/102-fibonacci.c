@@ -11,22 +11,18 @@
 
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	int a = 1, b = 2, count = 0;
 
-	for (count = 0; count < 50; count++)
+	while (count < 50)
 	{
-		sum = fib1 + fib2;
-		printf("lu", sum);
+		printf("%d, ", a);
+		int c = a + b;
 
-		fib1 = fib2;
-		fib2 = sum;
-
-		if (count == 49)
-			printf("\n");
-		else
-			printf(", ");
+		a = b;
+		b = c;
+		count++;
 	}
+	printf("\n");
 
 	return (0);
 }
