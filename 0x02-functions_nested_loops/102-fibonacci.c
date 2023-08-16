@@ -12,24 +12,26 @@
 int main(void)
 {
 	int count;
-	unsigned long a = 1, b = 2, sum = 0;
+		unsigned long fib1 = 0, fib2 = 1, sum;
 
-	while (count < 50)
-	{
-		if (count == 49)
+
+		for (count = 0; count < 50; count++)
 		{
-			printf("%lu", a);
+			sum = fib1 + fib2;
+			printf("%lu", sum);
+
+
+			fib1 = fib2;
+			fib2 = sum;
+
+
+			if (count == 49)
+				printf("\n");
+			else
+				printf(", ");
 		}
-		else
-		{
-		printf("%lu, ", a);
-		sum = a + b;
-		a = b;
-		b = sum;
-		count++;
-		}
-	}
-	printf("\n");
+
+
 
 	return (0);
 }
