@@ -11,15 +11,14 @@
 
 int main(void)
 {
-	int a = 1, b = 2, count = 0;
+	int count;
+	unsigned long a = 1, b = 2, sum = 0;
 
 	while (count < 50)
 	{
 		printf("%d, ", a);
-		int c = a + b;
-
 		a = b;
-		b = c;
+		b = sum;
 		count++;
 	}
 	printf("\n");
