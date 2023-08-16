@@ -17,6 +17,7 @@ int main(void)
 	while (count < 50)
 	{
 		printf("%lu, ", a);
+		sum = a + b;
 		a = b;
 		b = sum;
 		count++;
