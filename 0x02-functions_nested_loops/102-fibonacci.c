@@ -17,7 +17,9 @@ int main(void)
 	while (count < 50)
 	{
 		if (count == 49)
-			printf("lu", a);
+		{
+			printf("%lu", a);
+		}
 		else
 		{
 		printf("%lu, ", a);
