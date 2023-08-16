@@ -16,11 +16,16 @@ int main(void)
 
 	while (count < 50)
 	{
+		if (count == 49)
+			printf("lu", a);
+		else
+		{
 		printf("%lu, ", a);
 		sum = a + b;
 		a = b;
 		b = sum;
 		count++;
+		}
 	}
 	printf("\n");
 
