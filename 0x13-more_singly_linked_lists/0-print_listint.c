@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * print_listint - print the elements of a singly linked list.
@@ -17,5 +17,5 @@ size_t print_listint(const listint_t *h)
 		h = h->next;
 	}
 
-	return count;
+	return (count);
 }
