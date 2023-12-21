@@ -26,9 +26,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		free(current->value);
 		current->value = strdup(value);
-		return (1); 
+		return (1);
 	}
-    
+
 	/* Key does not exist, add new node */
 	new_node = malloc(sizeof(hash_node_t));
 	if (!new_node)
